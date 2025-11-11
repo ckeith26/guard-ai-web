@@ -2,6 +2,8 @@ import React from 'react';
 import Header from './header';
 import Section from './section';
 import pdf from '../img/pdf.png';
+import archImage from '../img/arch.png';
+import overImage from '../img/over.png';
 
 function Welcome() {
   return (
@@ -33,6 +35,26 @@ function Welcome() {
         <p>
         By 2030, agents, not people, will be the main users of enterprise systems, and by 2032, interaction with agents will surpass apps in the average time spent by consumers on smart devices. Organizations are delegating more responsibility to AI agents to increase employee productivity and reduce short-term costs. However, companies also face a greater risk because attackers can invest more resources to compromise AI agents with higher inherent value. To address this challenge, we introduce GUARD-AI, a two-stage detection system that utilizes a lightweight XGBoost model and a custom small language model (SLM) to balance speed and performance. Our two-stage system reduces agent risk from X% to X% while adding an average of X% of overhead cost to agentic systems. GUARD-AI is an efficient bidirectional policy enforcement layer that mediates both ingress (inputs from users, external agents, tools, and web content) and egress (agent-initiated actions). GUARD-AI treats these inputs and action contexts as arising from untrusted entities and environments (UEE), which include users, third-party agents/services, tools/plugins, the open web, file systems, and memory stores. GUARD-AI also enforces runtime governance to prevent prompt injection, exfiltration, and unsafe tool use. We also present a comparison of modeling strategies and training techniques along with performance metrics, evaluation of our leading models, and discussion of deployment considerations, failure modes, and limitations in real-world settings.
         </p>
+      </Section>
+      
+      <Section title="System Overview">
+        <div style={{ display: 'flex', justifyContent: 'center', margin: '20px 0' }}>
+          <img 
+            src={overImage} 
+            alt="GUARD-AI System Overview" 
+            style={{ maxWidth: '100%', height: 'auto', border: '1px solid #ddd', borderRadius: '4px' }}
+          />
+        </div>
+      </Section>
+
+      <Section title="Architecture">
+        <div style={{ display: 'flex', justifyContent: 'center', margin: '20px 0' }}>
+          <img 
+            src={archImage} 
+            alt="GUARD-AI Architecture Diagram" 
+            style={{ maxWidth: '100%', height: 'auto', border: '1px solid #ddd', borderRadius: '4px' }}
+          />
+        </div>
       </Section>
       {/* <h1>
         TLDR Version of the Paper
